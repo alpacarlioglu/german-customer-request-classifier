@@ -1,0 +1,16 @@
+.env
+.DS_Store
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.venv/
+model_artifacts/baseline/
+model_artifacts/transformer/
+reports/*.json
+reports/*.png
+
+# External datasets are reproducible build artifacts. Do not redistribute them
+# without reviewing each upstream license and required attribution.
+data/raw/
+data/cache/
+data/processed/

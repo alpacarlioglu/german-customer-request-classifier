@@ -1,0 +1,42 @@
+message,category
+"Meine Rechnung ist diesen Monat viel zu hoch.",Rechnung
+"Ich verstehe die zusätzliche Gebühr auf meiner Rechnung nicht.",Rechnung
+"Bitte senden Sie mir eine Kopie der letzten Rechnung.",Rechnung
+"Der berechnete Betrag stimmt nicht mit meinem Vertrag überein.",Rechnung
+"Warum wurde mir der gleiche Betrag zweimal berechnet?",Rechnung
+"Ich benötige eine detaillierte Aufstellung meiner Kosten.",Rechnung
+"Auf der Rechnung fehlt meine Kundennummer.",Rechnung
+"Bitte korrigieren Sie den falschen Rechnungsbetrag.",Rechnung
+"Wann wird meine nächste Rechnung erstellt?",Rechnung
+"Die Mehrwertsteuer ist auf meiner Rechnung falsch angegeben.",Rechnung
+"Ich möchte meinen Vertrag zum Monatsende kündigen.",Kündigung
+"Bitte bestätigen Sie mir die Kündigung schriftlich.",Kündigung
+"Wie lang ist die Kündigungsfrist für meinen Vertrag?",Kündigung
+"Beenden Sie meinen Vertrag zum nächstmöglichen Termin.",Kündigung
+"Ich möchte den Service nicht länger nutzen.",Kündigung
+"Meine Vertragskündigung wurde noch nicht bestätigt.",Kündigung
+"Kann ich meinen Vertrag sofort auflösen?",Kündigung
+"Bitte stornieren Sie mein laufendes Abonnement.",Kündigung
+"Ich widerrufe den neu abgeschlossenen Vertrag.",Kündigung
+"Der Vertrag soll nach der Mindestlaufzeit enden.",Kündigung
+"Mein Internet funktioniert seit heute Morgen nicht.",Technischer Support
+"Die Verbindung bricht alle paar Minuten ab.",Technischer Support
+"Der Router zeigt ständig eine rote Leuchte.",Technischer Support
+"Ich kann mich nicht mehr in der App anmelden.",Technischer Support
+"Die Webseite lädt bei mir nur eine Fehlermeldung.",Technischer Support
+"Nach dem Update startet die Anwendung nicht mehr.",Technischer Support
+"Mein Passwort lässt sich nicht zurücksetzen.",Technischer Support
+"Der Anschluss ist langsam und instabil.",Technischer Support
+"Ich erhalte beim Login immer den Fehler 403.",Technischer Support
+"Bitte helfen Sie mir bei der Einrichtung des Routers.",Technischer Support
+"Ich bin umgezogen und möchte meine Adresse ändern.",Adressänderung
+"Bitte aktualisieren Sie meine Postanschrift.",Adressänderung
+"Meine neue Straße ist noch nicht im Kundenkonto hinterlegt.",Adressänderung
+"Wie kann ich meine Rechnungsadresse anpassen?",Adressänderung
+"Die hinterlegte Hausnummer ist nicht korrekt.",Adressänderung
+"Bitte ändern Sie den Wohnort in meinen Kundendaten.",Adressänderung
+"Meine alte Adresse soll durch die neue ersetzt werden.",Adressänderung
+"Ich möchte eine abweichende Lieferadresse eintragen.",Adressänderung
+"Nach meinem Umzug stimmen die Kontaktdaten nicht mehr.",Adressänderung
+"Wo kann ich die gespeicherte Anschrift bearbeiten?",Adressänderung
+
