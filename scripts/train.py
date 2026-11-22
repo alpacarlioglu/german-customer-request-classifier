@@ -14,6 +14,7 @@ from sklearn.metrics import accuracy_score, f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 
+from src.calibration import fit_temperature, negative_log_likelihood
 from src.preprocessing import preprocess_text
 
 
@@ -109,6 +110,42 @@ def basic_metrics(labels: list[str], predictions: list[str]) -> dict[str, float]
     }
 
 
+MIN_CALIBRATION_ROWS = 20
+
+
+def baseline_logits(pipeline: Pipeline, texts) -> np.ndarray:
+    """Return 2-D logits; binary models use [0, d] so softmax equals sigmoid."""
+    scores = np.asarray(pipeline.decision_function(texts), dtype=float)
+    if scores.ndim == 1:
+        scores = np.column_stack([np.zeros_like(scores), scores])
+    return scores
+
+
+def calibrate_baseline(
+    pipeline: Pipeline, validation: pd.DataFrame, text_column: str, label_column: str
+) -> tuple[float, dict[str, object]]:
+    """Fit a temperature on the validation split when it has enough rows."""
+    rows = int(len(validation))
+    info: dict[str, object] = {
+        "fitted": False,
+        "validation_rows": rows,
+        "nll_before": None,
+        "nll_after": None,
+    }
+    if rows < MIN_CALIBRATION_ROWS:
+        return 1.0, info
+    class_to_index = {label: index for index, label in enumerate(pipeline.classes_.tolist())}
+    label_indices = np.array([class_to_index[label] for label in validation[label_column]])
+    logits = baseline_logits(pipeline, validation[text_column])
+    temperature = fit_temperature(logits, label_indices)
+    info.update(
+        fitted=True,
+        nll_before=negative_log_likelihood(logits, label_indices, 1.0),
+        nll_after=negative_log_likelihood(logits, label_indices, temperature),
+    )
+    return temperature, info
+
+
 def train_baseline(
     train: pd.DataFrame,
     validation: pd.DataFrame,
@@ -137,6 +174,9 @@ def train_baseline(
     )
     pipeline.fit(train[text_column], train[label_column])
     predictions = pipeline.predict(validation[text_column]).tolist()
+    temperature, calibration = calibrate_baseline(
+        pipeline, validation, text_column, label_column
+    )
 
     model_dir = output_dir / "baseline"
     model_dir.mkdir(parents=True, exist_ok=True)
@@ -145,6 +185,8 @@ def train_baseline(
         "model_name": "tfidf_logreg",
         "labels": pipeline.classes_.tolist(),
         "validation_metrics": basic_metrics(validation[label_column].tolist(), predictions),
+        "temperature": temperature,
+        "calibration": calibration,
         "dataset": data_metadata or dataset_metadata(
             pd.concat([train, validation], ignore_index=True), label_column
         ),

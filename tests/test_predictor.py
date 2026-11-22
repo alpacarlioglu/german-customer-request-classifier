@@ -50,3 +50,46 @@ def test_masks_message_before_prediction(tmp_path: Path) -> None:
     assert "anna@example.de" not in prediction.masked_message
     assert "<EMAIL>" in prediction.masked_message
 
+
+
+def test_temperature_one_matches_predict_proba(tmp_path: Path) -> None:
+    import numpy as np
+
+    create_test_model(tmp_path)
+    service = PredictorService(tmp_path)
+    text = "Meine Rechnung stimmt nicht"
+
+    pipeline = joblib.load(tmp_path / "baseline" / "model.joblib")
+    assert np.allclose(service.baseline_probabilities(text), pipeline.predict_proba([text])[0])
+
+
+def test_temperature_one_matches_predict_proba_for_multiclass(tmp_path: Path) -> None:
+    import numpy as np
+
+    messages = ["Rechnung falsch", "Vertrag kündigen", "Adresse ändern", "Rechnung zu hoch",
+                "Kündigung bitte", "Umzug neue Adresse"]
+    labels = ["Rechnung", "Kündigung", "Adresse", "Rechnung", "Kündigung", "Adresse"]
+    pipeline = Pipeline([("tfidf", TfidfVectorizer()), ("classifier", LogisticRegression(random_state=42))])
+    pipeline.fit(messages, labels)
+    (tmp_path / "baseline").mkdir()
+    joblib.dump(pipeline, tmp_path / "baseline" / "model.joblib")
+
+    service = PredictorService(tmp_path)
+
+    assert np.allclose(
+        service.baseline_probabilities("Rechnung Adresse"),
+        pipeline.predict_proba(["Rechnung Adresse"])[0],
+    )
+
+
+def test_stored_temperature_softens_confidence(tmp_path: Path) -> None:
+    import json
+
+    create_test_model(tmp_path)
+    plain = PredictorService(tmp_path).predict("Meine Rechnung stimmt nicht", BASELINE)
+    (tmp_path / "baseline" / "metadata.json").write_text(json.dumps({"temperature": 4.0}))
+
+    softened = PredictorService(tmp_path).predict("Meine Rechnung stimmt nicht", BASELINE)
+
+    assert softened.category == plain.category
+    assert softened.confidence < plain.confidence

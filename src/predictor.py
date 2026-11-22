@@ -8,11 +8,13 @@ from typing import Any
 import joblib
 import numpy as np
 
+from src.calibration import apply_temperature
 from src.preprocessing import preprocess_text
 
 
 BASELINE = "tfidf_logreg"
 TRANSFORMER = "transformer"
+BASELINE_TEMPERATURE = "tfidf_logreg_temperature"
 
 
 @dataclass(frozen=True)
@@ -26,7 +28,12 @@ class Prediction:
 
 
 class PredictorService:
-    """Load saved classifiers and expose one small prediction interface."""
+    """Load saved classifiers and expose one small prediction interface.
+
+    Baseline probabilities are temperature scaled using the value stored in
+    baseline/metadata.json (1.0 when missing, which equals predict_proba). The
+    Transformer path is unchanged and uses plain softmax probabilities.
+    """
 
     def __init__(self, artifact_dir: str | Path, review_threshold: float = 0.65):
         self.artifact_dir = Path(artifact_dir)
@@ -80,13 +87,33 @@ class PredictorService:
             if not path.exists():
                 raise FileNotFoundError("Baseline model not found. Run scripts/train.py first.")
             self._loaded[BASELINE] = joblib.load(path)
+            self._loaded[BASELINE_TEMPERATURE] = self._read_temperature()
         return self._loaded[BASELINE]
+
+    def _read_temperature(self) -> float:
+        """Read the baseline temperature, defaulting to 1.0 for old artifacts."""
+        path = self.artifact_dir / "baseline" / "metadata.json"
+        if not path.exists():
+            return 1.0
+        try:
+            value = float(json.loads(path.read_text(encoding="utf-8")).get("temperature", 1.0))
+        except (ValueError, TypeError, AttributeError):
+            return 1.0
+        return value if value > 0 else 1.0
+
+    def baseline_probabilities(self, text: str) -> np.ndarray:
+        """Return temperature-scaled class probabilities for one baseline input."""
+        pipeline = self._load_baseline()
+        scores = np.asarray(pipeline.decision_function([text]), dtype=float)
+        if scores.ndim == 1:
+            scores = np.column_stack([np.zeros_like(scores), scores])
+        return apply_temperature(scores, self._loaded[BASELINE_TEMPERATURE])[0]
 
     def _predict_baseline(
         self, text: str, explain: bool
     ) -> tuple[str, float, list[tuple[str, float]]]:
         pipeline = self._load_baseline()
-        probabilities = pipeline.predict_proba([text])[0]
+        probabilities = self.baseline_probabilities(text)
         class_index = int(np.argmax(probabilities))
         category = str(pipeline.classes_[class_index])
         importance = self._baseline_importance(pipeline, text, class_index) if explain else []

@@ -1,0 +1,121 @@
+message,category,source,review_status
+"Hallo, auf meiner Abrechnung vom Oktober stehen 14,99 € für eine Option, die ich nie bestellt habe. Können Sie das prüfen?",Rechnung,manual_model_authored,pending_author_review
+"Sehr geehrte Damen und Herren, ich habe die Zahlungserinnerung vom 3. November erhalten, obwohl ich längst überwiesen habe. Der Beleg liegt bei.",Rechnung,manual_model_authored,pending_author_review
+"wieso wurde mir schon wieder was abgebucht, ich seh den posten nirgends",Rechnung,manual_model_authored,pending_author_review
+Rechnungsnummer 2024-8841 bitte als PDF an max.mustermann@example.de schicken.,Rechnung,manual_model_authored,pending_author_review
+Kann ich die offene Forderung in drei Raten bezahlen?,Rechnung,manual_model_authored,pending_author_review
+Die Gutschrift aus meinem Widerspruch ist bis heute nicht auf dem Konto angekommen.,Rechnung,manual_model_authored,pending_author_review
+Ich möchte von Lastschrift auf Überweisung umstellen. Wie zahle ich künftig?,Rechnung,manual_model_authored,pending_author_review
+Mahngebühren von 5 Euro?? Die Rechnung kam nie bei mir an.,Rechnung,manual_model_authored,pending_author_review
+"Hi, bis wann muss die Septemberrechnung eigentlich bezahlt sein?",Rechnung,manual_model_authored,pending_author_review
+Für Kundennummer 12345678 wurde der Jahresbeitrag doppelt eingezogen. Bitte erstatten Sie einen der beiden Beträge.,Rechnung,manual_model_authored,pending_author_review
+Welche IBAN muss ich für die Überweisung verwenden?,Rechnung,manual_model_authored,pending_author_review
+Meine Zahlung von letzter Woche taucht in der Kontoübersicht noch nicht auf.,Rechnung,manual_model_authored,pending_author_review
+"Bitte schicken Sie mir einen Zahlungsbeleg fuer das Steuerbuero, ich brauche ihn bis Freitag.",Rechnung,manual_model_authored,pending_author_review
+"Der Preis auf der Abrechnung weicht von dem ab, der mir am Telefon genannt wurde.",Rechnung,manual_model_authored,pending_author_review
+"Ich habe 89,90 € überwiesen, aber den Verwendungszweck vergessen. Wie ordnen Sie die Zahlung zu?",Rechnung,manual_model_authored,pending_author_review
+Rückerstattung zu viel gezahlter Beträge: Wann kann ich damit rechnen?,Rechnung,manual_model_authored,pending_author_review
+Wieso steht auf der Rechnung ein Aufschlag für Papierversand?,Rechnung,manual_model_authored,pending_author_review
+"Hallo, ich brauche die Rechnung auf meine Firma ausgestellt, mit USt-IdNr. Geht das nachträglich?",Rechnung,manual_model_authored,pending_author_review
+Darf ich bei Zahlung innerhalb von 10 Tagen Skonto abziehen?,Rechnung,manual_model_authored,pending_author_review
+zu hoch. bitte nachrechnen.,Rechnung,manual_model_authored,pending_author_review
+"Sehr geehrte Damen und Herren, die Jahresabrechnung weist eine Nachzahlung von 212,40 € aus. Bitte erläutern Sie, wie sich dieser Betrag zusammensetzt.",Rechnung,manual_model_authored,pending_author_review
+"bei der letzten abbuchung fehlen 3 euro, die ich als guthaben hatte",Rechnung,manual_model_authored,pending_author_review
+Kann ich per PayPal bezahlen oder nur per Karte?,Rechnung,manual_model_authored,pending_author_review
+"Wir hatten ab 1.10. einen Preisnachlass vereinbart, in der aktuellen Abrechnung fehlt er.",Rechnung,manual_model_authored,pending_author_review
+"Ich bin vor Kurzem umgezogen, aber darum geht es nicht: Die Novemberabrechnung enthält eine Position Bereitstellung über 49 €, die ich nicht nachvollziehen kann.",Rechnung,manual_model_authored,pending_author_review
+"Hallo, mein Login geht wieder, danke. Im Portal sehe ich aber zwei Rechnungen für denselben Monat. Welche ist gültig?",Rechnung,manual_model_authored,pending_author_review
+"Ich bleibe Kunde, aber die Gebühr von 27,50 € auf der Abrechnung kann ich nicht nachvollziehen.",Rechnung,manual_model_authored,pending_author_review
+"Bitte rechnen Sie mir die Kosten für Mai bis Juli einzeln auf, ich muss sie intern weiterverrechnen.",Rechnung,manual_model_authored,pending_author_review
+"Tarifwechsel war im Juli, trotzdem wird noch der alte Preis berechnet. Bitte korrigieren Sie die Abrechnung.",Rechnung,manual_model_authored,pending_author_review
+"Ich habe gestern überwiesen, bitte verschicken Sie keine Mahnung mehr. Rückfragen unter 0170 1234567.",Rechnung,manual_model_authored,pending_author_review
+"Hallo, hiermit kündige ich meinen Stromvertrag fristgerecht. Kundennummer 12345678.",Kündigung,manual_model_authored,pending_author_review
+"Sehr geehrte Damen und Herren, ich möchte mein Fitnessstudio-Abo zum 31.12. beenden und bitte um eine kurze Bestätigung.",Kündigung,manual_model_authored,pending_author_review
+bitte meinen account komplett loeschen und das abo beenden,Kündigung,manual_model_authored,pending_author_review
+"Tschüss, ich bin raus. Bitte Abo stoppen.",Kündigung,manual_model_authored,pending_author_review
+Zum Ende der Laufzeit möchte ich nicht verlängern.,Kündigung,manual_model_authored,pending_author_review
+Ich wechsle zu einem anderen Anbieter. Bitte nehmen Sie meine Kündigung entgegen.,Kündigung,manual_model_authored,pending_author_review
+Wie kann ich mein Premium-Paket abbestellen? Ich nutze es nicht mehr.,Kündigung,manual_model_authored,pending_author_review
+Ich widerrufe hiermit meine Mitgliedschaft innerhalb der 14-Tage-Frist.,Kündigung,manual_model_authored,pending_author_review
+Wegen der Preiserhöhung mache ich von meinem Sonderkündigungsrecht Gebrauch und beende den Vertrag zum nächsten Monat.,Kündigung,manual_model_authored,pending_author_review
+"Mein Vater ist verstorben, bitte kündigen Sie seinen Vertrag. Die Sterbeurkunde liegt bei.",Kündigung,manual_model_authored,pending_author_review
+Hiermit kuendige ich den Mobilfunkvertrag mit der Rufnummer 0170 1234567 zum naechstmoeglichen Zeitpunkt.,Kündigung,manual_model_authored,pending_author_review
+Ich ziehe ins Ausland und brauche den Anschluss nicht mehr. Bitte den Vertrag beenden.,Kündigung,manual_model_authored,pending_author_review
+"Wegen der ständigen Fehler auf den Abrechnungen habe ich genug. Ich kündige zum nächsten Termin, bitte schriftlich bestätigen.",Kündigung,manual_model_authored,pending_author_review
+"Nach drei Wochen ohne Internet reicht es mir. Ich möchte aus dem Vertrag raus, wenn möglich außerordentlich.",Kündigung,manual_model_authored,pending_author_review
+Kündigung. Vertragsnummer 4711-22. Bitte bestätigen.,Kündigung,manual_model_authored,pending_author_review
+"Wir möchten die Zusammenarbeit zum Jahresende beenden, die Lizenzen brauchen wir nicht mehr.",Kündigung,manual_model_authored,pending_author_review
+Ich möchte die Zeitung nicht mehr beziehen. Das Probeabo soll nicht in ein reguläres Abo übergehen.,Kündigung,manual_model_authored,pending_author_review
+Ich möchte meine Hausratversicherung zum Jahreswechsel kündigen.,Kündigung,manual_model_authored,pending_author_review
+"Hallo, ich habe vor zwei Wochen gekündigt und werde trotzdem weiter beliefert. Wurde das überhaupt bearbeitet?",Kündigung,manual_model_authored,pending_author_review
+Den Wartungsvertrag für unsere Heizungsanlage wollen wir nicht erneuern.,Kündigung,manual_model_authored,pending_author_review
+"Austritt aus dem Verein zum Quartalsende, bitte um Bestätigung.",Kündigung,manual_model_authored,pending_author_review
+kann man das jahresabo auch vorzeitig beenden? ich will es nicht mehr,Kündigung,manual_model_authored,pending_author_review
+"Sehr geehrte Damen und Herren, im Namen meiner Mutter widerrufe ich den am Telefon geschlossenen Vertrag.",Kündigung,manual_model_authored,pending_author_review
+"Ich habe eine Rechnung über 39,90 € bekommen, aber das ist egal, denn ich möchte sowieso nicht mehr Ihr Kunde sein. Bitte beenden Sie den Vertrag zum Monatsende.",Kündigung,manual_model_authored,pending_author_review
+"Streamingdienst bitte kündigen, danke.",Kündigung,manual_model_authored,pending_author_review
+Bitte beenden Sie auch den Vertrag für meinen zweiten Anschluss in der Kölner Wohnung. Der erste bleibt bestehen.,Kündigung,manual_model_authored,pending_author_review
+"Hallo, ich will meine Mitgliedschaft nicht pausieren, sondern ganz beenden. Wie gehe ich vor?",Kündigung,manual_model_authored,pending_author_review
+"Mein Studium ist vorbei, daher möchte ich den Studententarif aufgeben.",Kündigung,manual_model_authored,pending_author_review
+"Hi, wie sage ich meinen Vertrag auf? Gibt es dafür ein Formular?",Kündigung,manual_model_authored,pending_author_review
+"Mit diesem Schreiben beende ich meinen Handyvertrag, die Rufnummer möchte ich gern mitnehmen.",Kündigung,manual_model_authored,pending_author_review
+"Hallo, ich wohne seit dem 1. November in der Lindenallee 14, 53111 Bonn. Bitte tragen Sie das in meinem Profil ein.",Adressänderung,manual_model_authored,pending_author_review
+"Sehr geehrte Damen und Herren, bitte senden Sie die Post ab sofort an: Musterweg 5, 50667 Köln.",Adressänderung,manual_model_authored,pending_author_review
+"neue adresse: hauptstr. 7, 10115 berlin. bitte ändern",Adressänderung,manual_model_authored,pending_author_review
+"Mein Name stimmt, aber die Postleitzahl im Konto ist falsch. Sie lautet 53113.",Adressänderung,manual_model_authored,pending_author_review
+Liefern Sie künftig bitte an meine Arbeitsadresse und nicht mehr nach Hause.,Adressänderung,manual_model_authored,pending_author_review
+"Ich habe eine neue Telefonnummer, 0170 1234567, und eine neue Mailadresse, max.mustermann@example.de. Bitte in den Stammdaten ändern.",Adressänderung,manual_model_authored,pending_author_review
+Wir sind als Firma umgezogen. Bitte die Rechnungsanschrift auf Bahnhofstraße 3 in Siegburg ändern.,Adressänderung,manual_model_authored,pending_author_review
+"Bitte ergänzen Sie 3. OG rechts, der Paketbote findet mich sonst nicht.",Adressänderung,manual_model_authored,pending_author_review
+"Umzug am Wochenende, die Adresse wechselt. Wie melde ich das?",Adressänderung,manual_model_authored,pending_author_review
+"Hi, ich bin nach Hamburg gezogen, könnt ihr meine Anschrift anpassen?",Adressänderung,manual_model_authored,pending_author_review
+"Der Straßenname ist falsch geschrieben, es heißt Goethestraße, nicht Gotestraße.",Adressänderung,manual_model_authored,pending_author_review
+"Bitte tragen Sie als Lieferadresse die meiner Schwester ein, ich bin im Dezember dort.",Adressänderung,manual_model_authored,pending_author_review
+"Meine Wohnadresse hat sich geändert, Kundennummer 12345678. Die neue Anschrift schicke ich per Brief.",Adressänderung,manual_model_authored,pending_author_review
+"Seit dem Umzug kommt keine Post mehr an, weil bei Ihnen noch die alte Straße steht. Bitte korrigieren.",Adressänderung,manual_model_authored,pending_author_review
+"Postfach statt Hausadresse bitte: Postfach 1234, 53001 Bonn.",Adressänderung,manual_model_authored,pending_author_review
+"Rechnungen sollen künftig an meine Steuerberaterin gehen: Kanzlei Beispiel, Domplatz 2, 50667 Köln.",Adressänderung,manual_model_authored,pending_author_review
+Der Zusatz c/o Müller fehlt in meiner Anschrift.,Adressänderung,manual_model_authored,pending_author_review
+Ich ziehe zum 01.12. um. Kann ich die neue Adresse schon jetzt hinterlegen?,Adressänderung,manual_model_authored,pending_author_review
+"Ich möchte keine neue Rechnung, sondern nur meine Anschrift richtigstellen: Hausnummer 12a statt 12.",Adressänderung,manual_model_authored,pending_author_review
+"Mein Router ist in der neuen Wohnung schon angeschlossen und läuft. Fehlt nur noch, dass Sie die neue Adresse bei sich speichern.",Adressänderung,manual_model_authored,pending_author_review
+Wir haben geheiratet und wohnen jetzt gemeinsam in der Rosenstr. 9. Bitte passen Sie die Anschrift an.,Adressänderung,manual_model_authored,pending_author_review
+"Adresse geaendert: Am Markt 2, 53840 Troisdorf. Danke!",Adressänderung,manual_model_authored,pending_author_review
+"Die Karte ging an meine alte Adresse. Bitte künftig diese verwenden: Kirchplatz 1, 53721 Siegburg.",Adressänderung,manual_model_authored,pending_author_review
+"Bitte ändern Sie meine Postleitzahl und den Ortsteil, ich wohne jetzt in Bonn-Beuel.",Adressänderung,manual_model_authored,pending_author_review
+"Das Wohnheim ist vorbei, ich bin zurück bei meinen Eltern. Neue Anschrift bitte speichern.",Adressänderung,manual_model_authored,pending_author_review
+Bitte setzen Sie die Lieferanschrift für künftige Bestellungen dauerhaft auf Packstation 123.,Adressänderung,manual_model_authored,pending_author_review
+"Hallo Team, in eurem System steht noch meine alte Meldeadresse, ich bin umgezogen.",Adressänderung,manual_model_authored,pending_author_review
+Zustelladresse bitte ändern. Danke.,Adressänderung,manual_model_authored,pending_author_review
+"Wir haben unseren Firmensitz verlegt, die neue Adresse lautet Industrieweg 8, 53119 Bonn. Bitte in allen Unterlagen ersetzen.",Adressänderung,manual_model_authored,pending_author_review
+"Die Rechnung kam an, war aber an die falsche Hausnummer adressiert. Bitte im Konto richtig hinterlegen: Nr. 21.",Adressänderung,manual_model_authored,pending_author_review
+"Hallo, mein Smart-TV zeigt nach dem Neustart nur einen schwarzen Bildschirm.",Technischer Support,manual_model_authored,pending_author_review
+"Sehr geehrte Damen und Herren, seit gestern Abend ist unser WLAN komplett ausgefallen. Der Router blinkt orange.",Technischer Support,manual_model_authored,pending_author_review
+"kann mich nicht einloggen, es kommt immer benutzername oder passwort falsch",Technischer Support,manual_model_authored,pending_author_review
+Der Link zum Zurücksetzen des Passworts kommt nie in meinem Postfach an.,Technischer Support,manual_model_authored,pending_author_review
+"Die App stürzt beim Öffnen sofort ab, iPhone 13, iOS 17.",Technischer Support,manual_model_authored,pending_author_review
+Mein Telefon hat kein Freizeichen mehr.,Technischer Support,manual_model_authored,pending_author_review
+Die Zwei-Faktor-Authentifizierung schickt keinen Code an meine Nummer 0170 1234567.,Technischer Support,manual_model_authored,pending_author_review
+Download nur 2 Mbit statt 100. Was ist da los?,Technischer Support,manual_model_authored,pending_author_review
+"Der Drucker wird im Netzwerk nicht mehr erkannt, seit dem letzten Firmware-Update.",Technischer Support,manual_model_authored,pending_author_review
+Bei der Videotelefonie ruckelt alles und der Ton hinkt hinterher.,Technischer Support,manual_model_authored,pending_author_review
+Fehlercode E-204 beim Start der Software. Neu installieren hat nichts gebracht.,Technischer Support,manual_model_authored,pending_author_review
+"Hi, ist die Seite down? Bei mir kommt nur 503.",Technischer Support,manual_model_authored,pending_author_review
+Mein Zugang ist nach drei Fehlversuchen gesperrt. Wie entsperre ich ihn?,Technischer Support,manual_model_authored,pending_author_review
+"E-Mails lassen sich nicht abrufen, der Server antwortet nicht.",Technischer Support,manual_model_authored,pending_author_review
+"Das Gerät lässt sich nicht mehr einschalten, die LED bleibt dunkel.",Technischer Support,manual_model_authored,pending_author_review
+Bluetooth koppelt nicht mit dem Receiver.,Technischer Support,manual_model_authored,pending_author_review
+"kein empfang im keller, seit dem netzausbau ging es vorher noch",Technischer Support,manual_model_authored,pending_author_review
+Die Synchronisierung zwischen Handy und Laptop bricht mit einer Fehlermeldung ab.,Technischer Support,manual_model_authored,pending_author_review
+"Ich bin letzte Woche umgezogen, und seitdem kommt kein Signal mehr an der Dose. Alle Kabel sind richtig gesteckt.",Technischer Support,manual_model_authored,pending_author_review
+"Ich wollte im Portal meine Rechnung ansehen, aber die Seite bleibt nach dem Login weiß. Chrome und Firefox probiert.",Technischer Support,manual_model_authored,pending_author_review
+"Bevor ich überlege zu wechseln: Das Internet ist seit vier Tagen instabil, bitte schicken Sie einen Techniker.",Technischer Support,manual_model_authored,pending_author_review
+"Der Bildschirm flackert, seit ich den Treiber aktualisiert habe.",Technischer Support,manual_model_authored,pending_author_review
+Die Sprachsteuerung reagiert gar nicht mehr.,Technischer Support,manual_model_authored,pending_author_review
+Liegt in meiner Straße gerade eine Störung vor? Seit 18 Uhr ist alles tot.,Technischer Support,manual_model_authored,pending_author_review
+Beim Hochladen von Dateien bricht die Webseite bei 99 % ab.,Technischer Support,manual_model_authored,pending_author_review
+"Hallo, ich komme nicht mehr in mein Kundenkonto, die Zugangsdaten sind wohl abgelaufen. Max Mustermann, max.mustermann@example.de",Technischer Support,manual_model_authored,pending_author_review
+"SMS senden geht nicht, empfangen schon.",Technischer Support,manual_model_authored,pending_author_review
+Die Kamera in der App zeigt nur ein graues Bild.,Technischer Support,manual_model_authored,pending_author_review
+"Hotline dauerbesetzt, deshalb hier: DSL-Modem synchronisiert nicht, Kundennummer 12345678.",Technischer Support,manual_model_authored,pending_author_review
+Wie setze ich das Gerät auf Werkseinstellungen zurück? Es hängt beim Logo.,Technischer Support,manual_model_authored,pending_author_review
